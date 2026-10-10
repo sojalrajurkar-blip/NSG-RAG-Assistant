@@ -1,0 +1,18 @@
+# Core Web App
+streamlit>=1.35.0
+
+# PDF Extraction
+pymupdf>=1.24.0
+
+# Embeddings & Vector Storage
+sentence-transformers>=3.0.0
+chromadb>=0.5.0
+
+# LLM Provider (Google Gen AI SDK)
+google-genai>=0.1.0
+
+# Environment Management
+python-dotenv>=1.0.0
+
+# Testing
+pytest>=8.0.0

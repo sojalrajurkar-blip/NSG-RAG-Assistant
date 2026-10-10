@@ -1,0 +1,48 @@
+# Python Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environment variables & secrets (NEVER COMMIT)
+.env
+.env.local
+*.env
+
+# ChromaDB persistent vector database files
+chroma_db/
+
+# User uploaded / sensitive document storage
+data/documents/*
+!data/documents/.gitkeep
+
+# Evaluation runtime outputs & logs
+evaluation/results.csv
+evaluation/failure_log.md
+evaluation/incident_report.md
+evaluation/final_evaluation_report.md
+!evaluation/.gitkeep
+
+# Testing & Pytest artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Operating System files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# IDE / Editor configuration
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
