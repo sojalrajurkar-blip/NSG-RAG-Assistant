@@ -22,11 +22,9 @@ chroma_db/
 data/documents/*
 !data/documents/.gitkeep
 
-# Evaluation runtime outputs & logs
-evaluation/results.csv
-evaluation/failure_log.md
-evaluation/incident_report.md
-evaluation/final_evaluation_report.md
+# Evaluation evidence (tracked for assignment submission)
+!evaluation/*.csv
+!evaluation/*.md
 !evaluation/.gitkeep
 
 # Testing & Pytest artifacts

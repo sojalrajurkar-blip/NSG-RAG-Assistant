@@ -1,0 +1,33 @@
+id,question,category,expected_answer,is_answerable,expected_page
+TC-01,What is the primary goal of Assignment 01?,direct_factual,"Technology selection and problem framing; learning to recognize when RAG is needed before touching a vector DB",True,Page 2
+TC-02,What is the career context for Assignment 01?,direct_factual,"Senior engineers do not reach for tools because they are trending; they choose the simplest architecture that solves the problem",True,Page 3
+TC-03,What is the core dilemma explored in Assignment 02?,direct_factual,"LangChain: Abstraction or Dependency Trap? Evaluating whether LangChain adds real value or unnecessary complexity",True,Page 5
+TC-04,What is the focus of Assignment 03?,direct_factual,"Chain, Workflow or Agent? State, orchestration, and LangGraph thinking",True,Page 2
+TC-05,What is the title and goal of Assignment 04?,direct_factual,"My AI Works - Prove It. Evaluation, tracing, debugging, and reliability engineering",True,Page 9
+TC-06,What is the final objective in Assignment 05?,direct_factual,"Build a Production AI Product with complete end-to-end engineering, guardrails, and architecture justification",True,Page 11
+TC-07,What are the five assignments in this series in order?,multi_chunk_synthesis,"Assignment 01: Do I Need RAG?, Assignment 02: LangChain: Abstraction or Dependency?, Assignment 03: Chain, Workflow or Agent?, Assignment 04: My AI Works - Prove It, Assignment 05: Build a Production AI Product",True,"Page 2, Page 3"
+TC-08,Compare the architectural difference between a linear chain and a graph as discussed in the series.,multi_chunk_synthesis,"Linear chains execute sequential steps without branching or cycle control, whereas graphs (LangGraph) allow cyclical state, conditional routing, and explicit checkpoints",True,"Page 7, Page 8"
+TC-09,What four evaluation dimensions should be compared between direct implementation and LangChain in Assignment 02?,multi_chunk_synthesis,"Maintainability, latency/token overhead, debugging transparency, and dependency lock-in",True,Page 6
+TC-10,What artifacts are required in the Master Submission Checklist for every assignment?,multi_chunk_synthesis,"Working code, test cases and evidence, failure log, evaluation report, and architectural justification",True,Page 14
+TC-11,Why shouldn't an engineer immediately adopt LangChain without evaluating it?,paraphrased,"Because frameworks introduce abstraction layers that can cause debugging difficulties, dependency bloat, and hidden latency overhead",True,Page 5
+TC-12,How do we know if our AI application is actually trustworthy according to Assignment 04?,paraphrased,"By proving it through quantitative evaluation, regression test sets, tracing failures, and recording incident reports rather than subjective intuition",True,Page 9
+TC-13,What should an engineer do if a user asks a question not covered by the indexed documents?,paraphrased,"The system must have guardrails to decline answering or state that the context lacks sufficient information, avoiding fabrication",True,Page 13
+TC-14,In what way does Assignment 01 help with technology selection?,paraphrased,"It forces comparing an LLM-only baseline with RAG to evaluate if retrieval actually provides measurable accuracy improvements",True,Page 3
+TC-15,What does Part D in Assignment 04 require?,ambiguous,"Find failure points, conduct stress tests, and document an incident report with root cause analysis",True,Page 10
+TC-16,What are the rules for evaluation rubrics?,ambiguous,"Evaluate factual correctness, source citations, answerability behavior, and latency rather than arbitrary general impressions",True,Page 9
+TC-17,What technology matrix must be completed in Assignment 05?,ambiguous,"Technology/approach, Use? Why? Alternative considered, and Why rejected table",True,Page 12
+TC-18,What is the reflection prompt after Assignment 05?,ambiguous,"Final reflection answering key engineering questions on AI product maturity and technical growth",True,Page 15
+TC-19,What is the tuition fee and refund policy for NSG Academy courses?,unanswerable,"Not available in document excerpts",False,None
+TC-20,How do I install PyTorch 2.5 with CUDA 12 on Ubuntu Linux?,unanswerable,"Not available in document excerpts",False,None
+TC-21,Who is the current President of the United States in 2026?,unanswerable,"Not available in document excerpts",False,None
+TC-22,What is the secret API key for Assignment 06 in the curriculum?,unanswerable,"Not available in document excerpts (there is no Assignment 06)",False,None
+TC-23,What recipe is recommended for cooking Italian pasta in the syllabus?,unanswerable,"Not available in document excerpts",False,None
+TC-24,On which page is the Master Submission Checklist located?,page_critical,"Page 14",True,Page 14
+TC-25,On which page is Assignment 01 detailed?,page_critical,"Page 3",True,Page 3
+TC-26,On which page does the Final Reflection occur?,page_critical,"Page 15",True,Page 15
+TC-27,What specific section heading appears on Page 1?,page_critical,"NSG ACADEMY PRODUCT ENGINEERING AI ENGINEERING DECISION & PRODUCT BUILDING",True,Page 1
+TC-28,What document set is instructed to be used in Assignment 01 on Page 4?,page_critical,"A small, trustworthy document set with verified source content",True,Page 4
+TC-29,"   ",edge_case,"Empty query handled cleanly without error",False,None
+TC-30,Tell me everything about the secret features of LangSmith that are not in the PDF.,edge_case,"State that the information is not present in the document excerpts",False,None
+TC-31,Explain the difference between chain and agent without using the word workflow.,edge_case,"A chain is a deterministic sequence of steps whereas an agent uses an LLM to dynamically decide actions and tool calls",True,Page 7
+TC-32,What failure category is triggered when the vector retriever fetches chunks about baking instead of software engineering?,edge_case,"Retrieval failure / Low-relevance retrieval",True,Page 9
