@@ -8,6 +8,7 @@ Provides an intuitive local-first interface to:
 
 from pathlib import Path
 import time
+from typing import Optional
 import streamlit as st
 
 from src.config import load_config
